@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+    box-sizing: border-box;
+    font-family: "Raleway", 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #242227;
+}
+
+/*header*/
+#header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-basis: 100%;
+    width: 100%;
+    min-height: 120px;
+    background: #262428;
+    padding: 20px;
+
+}
+
+#header img {
+    width: 100px;
+    height: 100px;
+}
+
+#header h1 {
+    margin-left: 150px;
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+#navbar {
+    flex-basis: 100%;
+    width: 100%;
+    background: #333333;
+    min-height: 50px;
+}
+
+#navbar ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#navbar ul li {
+    display: inline;
+    background: transparent;
+    height: 100%;
+    flex-basis: 18%;
+    font-size: 28px;
+}
+
+#navbar ul li:hover {
+    background: #48423a;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*background*/
+#background {
+    background: url(img/1.jpg);
+    flex-basis: 100%;
+    min-height: 700px;
+}
+
+#background p {
+    font-size: 40px;
+    width: 50%;
+    height: 60%;
+    margin-top: 20%;
+    margin-left: 25%;
+}
+
+/*main*/
+#main {
+    background: #333333;
+    flex-basis: 65%;
+    width: 65%;
+    min-height: 300px;
+    padding: 8%;
+}
+
+#main p {
+    margin-top: 20px;
+}
+
+#side {
+    background: #262428;
+    flex-basis: 35%;
+    width: 35%;
+    min-height: 300px;
+    padding: 8%;
+    font-size: 30px;
+}
+
+@media(max-width: 600px) {
+
+    #main {
+        flex-basis: 100%;
+        width: 100%;
+        float: none;
+    }
+
+    #side {
+        flex-basis: 100%;
+        width: 100%;
+        float: none;
+    }
+
+    footer p {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+footer {
+    background: #48423a;
+    flex-basis: 100%;
+    width: 100%;
+    min-height: 70px;
+}
+
+footer p {
+    width: 20%;
+    height: 60%;
+    margin-left: 40%;
+    margin-top: 25px;
+}
